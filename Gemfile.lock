@@ -86,16 +86,20 @@ GEM
     markaby (0.7.2)
       builder (>= 2.0.0)
     mime-types (1.19)
+    mini_portile2 (2.5.1)
     multi_json (1.5.0)
     mysql2 (0.3.11)
     net-ldap (0.1.1)
-    nokogiri (1.5.6)
+    nokogiri (1.11.4)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     picnic (0.8.1.20100201)
       activesupport
       markaby
       rack
     polyglot (0.3.3)
     r18n-core (1.1.1)
+    racc (1.5.2)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -121,7 +125,8 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (0.8.7)
-    rb-fsevent (0.9.2)
+    rb-inotify (0.8.8)
+      ffi (>= 0.5.0)
     rdoc (3.12)
       json (~> 1.4)
     rspec (2.11.0)
@@ -181,7 +186,7 @@ DEPENDENCIES
   rack-test
   rails (= 3.2.8)
   rake (= 0.8.7)
-  rb-fsevent (~> 0.9.2)
+  rb-inotify (~> 0.8.8)
   rspec
   rspec-core
   rubycas-server!
